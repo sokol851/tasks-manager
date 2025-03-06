@@ -2,6 +2,8 @@ from django.db import models
 
 
 class Task(models.Model):
+    """ Модель задачи """
+
     title = models.CharField(
         max_length=100,
         verbose_name='название задачи'
