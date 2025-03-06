@@ -5,6 +5,7 @@ from tasks.models import Task
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
+    """ Управление задачами """
     list_display = (
         'title',
         'is_completed'
